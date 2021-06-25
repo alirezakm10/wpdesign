@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "yekan";
+  src: url("fonts/Yekan.eot");
+  src: url("fonts/Yekan.woff");
+  src: url("fonts/Yekan.ttf");
+  src: url("fonts/Yekan.svg");
+  src: url("fonts/Yekan.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* ---Start CSS Reset--- */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: yekan;
+}
+a {
+  text-decoration: none;
+  color: #202020;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+/* ---End CSS Reset--- */
+
+/* Navbar Started */
+.custom-navbar-container {
+  background: #292929;
+  border-bottom: 5px solid #1d1c1ca4;
+}
+.custom-navbar {
+  background: #292929;
+}
+.custom-navbar-container .navbar{
+  padding-bottom: -50px !important;
+}
+.custom-navbar ul li {
+  line-height: 130px;
+  border-left: 2px solid #05050550;
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+}
+.custom-navbar ul li a {
+  height: 130px;
+  line-height: 130px;
+}
+.custom-navbar ul li .active {
+  border-bottom: 5px solid green;
+  color: #58c93a !important;
+}
+/* Navbar Ended */
+
+/* Start Main Content */
+.main-content {
+  background: brown;
+  height: 500px;
+}
+.custom-card .card-body a:hover{
+background: green;
+color: white;
+transition: all .2s ease-in-out;
+}
+
+.custom-card:hover{
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.637);
+  transition: all .4s ease-in-out;
+  transform: scale(1.02);
+  cursor:pointer;
+}
+/* End Main Content */
+
+/* Start SideBar Content */
+.sidebar-content {
+  height: 500px;
+}
+
+.search-sidebar-inp {
+  border: 1px solid #e1e0e0;
+  height: 50px;
+  font-size: 14px;
+  font-family: "Wyekan";
+  color: rgb(185, 185, 185);
+  text-align: right;
+  width: 100%;
+}
+.search-sidebar-inp::-webkit-input-placeholder {
+  padding-right: 15px;
+}
+.search-icon-sidebar {
+  position: absolute;
+  top: 55px;
+  left: 12px;
+  cursor: pointer;
+}
+.sidebar-content .card-header{
+  border-right: 3px solid green;
+}
+
+/* End SideBar Content */
+
+/* Start Footer  */
+.socialmedias div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ .socialmedias div i{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background: #8b8b8b;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #f5f5f5;
+  margin: 15px;
+  cursor: pointer;
+  transition: all .2s ease-in;
+ }
+ .socialmedias .facebook:hover{
+   background: #3b5998;
+ }
+ .socialmedias .twitter:hover{
+  background: #55acee;
+}
+.socialmedias .behance:hover{
+  background:  #1769ff;
+}
+.socialmedias .pin:hover{
+  background: 	#bb0000;
+}
+/* End Footer */
+
+/* Media queries Started */
+
+/* responsive logo and display none border left under 992px width */
+@media only screen and (max-width: 992px) {
+  .custom-logo {
+    position: absolute;
+    top: -40px;
+    left: 15px;
+  }
+  .custom-navbar ul li {
+    border-left: none;
+  }
+}
+
+/* below media query hide the display of logo under 282px width */
+@media only screen and (max-width: 282px) {
+  .custom-logo {
+    display: none;
+  }
+}
+
+/* Media Queries Ended */
